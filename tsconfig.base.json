@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@primoless-manager/common-ui": ["libs/common-ui/src/index.ts"],
+      "@primoless-manager/pages-ui": ["libs/pages-ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
