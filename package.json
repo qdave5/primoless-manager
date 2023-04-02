@@ -1,16 +1,22 @@
 {
   "name": "primoless-manager",
-  "version": "1.0.2",
+  "version": "1.0.8",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "homepage": "http://qdave5.github.io/primoless-manager/",
-  "predeploy": "npm run build -- --prod --baseHref=/primoless-manager/",
-  "deploy": "gh-pages -d dist/apps/primoless-manager/",
   "private": true,
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "^6.10.0",
+    "react-scripts": "^5.0.1",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
