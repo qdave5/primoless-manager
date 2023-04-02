@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from "./app.module.scss";
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import { BannerValueCalc, HomePage } from "@primoless-manager/pages-ui";
 import { Footer, Navbar } from "@primoless-manager/common-ui";
@@ -14,12 +14,12 @@ export function App() {
 
       <main className={styles["flex-shrink-0"]}>
         
-        <Router>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<HomePage/>} />
             <Route path="/banner-value/" element={<BannerValueCalc/>} />
           </Routes>
-        </Router>
+        </HashRouter>
         
       </main>
 

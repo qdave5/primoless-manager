@@ -5,10 +5,12 @@ export interface FooterProps {}
 
 export function Footer(props: FooterProps) {
   return (
-    <footer className={[styles["mt-auto"], styles["py-3"]].join(" ")}>
-      <div className={styles["container-fluid"]}>
-        <a className={styles[""]} href="./">Primoless-Manager</a>
+    <footer className={[styles["bg-dark"], styles["text-center"], styles["text-lg-start"], styles["text-light"]].join(" ")}>
+      {/* <!-- Copyright --> */}
+      <div className={[styles["text-center"], styles["p-3"]].join(" ")}>
+        <a className={styles["text-light"]} href="https://github.com/qdave5/primoless-manager.git">Primoless-Manager v1.0.0</a>
       </div>
+      {/* <!-- Copyright --> */}
     </footer>
   );
 }
