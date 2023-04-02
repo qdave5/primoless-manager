@@ -17,7 +17,7 @@ export function App() {
         <Router>
           <Routes>
             <Route path="/" element={<HomePage/>} />
-            <Route path="/banner-value" element={<BannerValueCalc/>} />
+            <Route path="/banner-value/" element={<BannerValueCalc/>} />
           </Routes>
         </Router>
         
