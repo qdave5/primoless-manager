@@ -1,8 +1,9 @@
 {
   "name": "primoless-manager",
-  "version": "0.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "scripts": {},
+  "predeploy": "npm run build -- --prod --baseHref=/qdave5.github.io/primoless-manager/",
   "private": true,
   "dependencies": {
     "react": "18.2.0",
