@@ -1,15 +1,16 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from "./app.module.scss";
 
-import NxWelcome from "./nx-welcome";
+import { Navbar } from "@primoless-manager/common-ui";
 
 export function App() {
   return (
-    <>
-      <NxWelcome title="frontend" />
+    <div className={[styles["container-fluid"], styles["bg-dark"], styles["text-white"]].join(" ")}>
+      
+      <Navbar />
 
       <div />
-    </>
+    </div>
   );
 }
 
