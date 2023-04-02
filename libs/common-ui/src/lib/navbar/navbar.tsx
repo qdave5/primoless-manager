@@ -5,7 +5,7 @@ export interface NavbarProps {}
 
 export function Navbar(props: NavbarProps) {
   return (
-    <nav className={[styles["navbar"], styles["navbar-expand-lg"], styles["navbar-light"], styles["bg-light"]].join(" ")}>
+    <nav className={[styles["navbar"], styles["navbar-expand-lg"], styles["navbar-dark"]].join(" ")}>
       <div className={styles["container-fluid"]}>
         <a className={styles["navbar-brand"]} href="#">Navbar</a>
         <button className={styles["navbar-toggler"]} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

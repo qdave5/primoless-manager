@@ -5,9 +5,11 @@ export interface FooterProps {}
 
 export function Footer(props: FooterProps) {
   return (
-    <div className={styles['container']}>
-      <h1>Welcome to Footer!</h1>
-    </div>
+    <footer className={[styles["mt-auto"], styles["py-3"]].join(" ")}>
+      <div className={styles["container-fluid"]}>
+        <a className={styles[""]} href="./">Primoless-Manager</a>
+      </div>
+    </footer>
   );
 }
 
